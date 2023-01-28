@@ -1,0 +1,9 @@
+{% block content_body %}
+    <h1>Créez une nouvelle Annonce !</h1>
+    {{ form_start(form) }}
+    {{ form_row(form.titre) }}
+    {{ form_end(form) }}
+    {% if annonceAdded is defined %}
+        <h3 style="color:#947b56;">Annonce ajoutée ^_____^🐖🦢</h3>
+    {% endif %}
+{% endblock %}
